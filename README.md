@@ -1,6 +1,6 @@
-# Credit-Card-Fraud-Detection-System
+# Credit-Card-Fraud-Detection-Using-ML-and-Different-Imbalance-Handling-Approaches
 
-This repository contains the implementation of a Credit Card Fraud Detection System using machine learning techniques. The project focuses on detecting fraudulent transactions in highly imbalanced datasets.
+A machine learning-based system for detecting fraudulent credit card transactions, leveraging advanced techniques like SMOTE, under-sampling, and anomaly detection models. Built with Random Forest, XGBoost, and SVM for robust performance on imbalanced datasets.
 
 ## Features
 - Built machine learning models: Random Forest, XGBoost, and SVM.
@@ -8,7 +8,18 @@ This repository contains the implementation of a Credit Card Fraud Detection Sys
 - Explored anomaly detection methods: One-Class SVM and Isolation Forest.
 - Evaluated model performance using metrics like precision, recall, F1-score, and ROC-AUC.
 
-## Summary
+## Imbalance Handling Methods Explored
+
+- **In-Algorithm Techniques**:  
+  - **Random Forest and XGBoost**: These models can handle imbalanced datasets by adjusting the `class_weight` (for Random Forest) or `scale_pos_weight` (for XGBoost). This modification assigns higher weights to the minority class (fraudulent transactions), helping the model to focus more on detecting fraud.
+  - **SVM**: The `class_weight` parameter in Support Vector Machine (SVM) adjusts the weight of the classes, making the model more sensitive to the minority class (fraud).
+
+- **Under-Sampling**:  
+  - **NearMiss and Random Under-Sampling**: These techniques involve reducing the majority class (non-fraudulent transactions) to balance the class distribution. NearMiss selects examples that are close to the decision boundary, while random under-sampling removes random examples from the majority class to make the dataset more balanced.
+
+- **Anomaly Detection**:  
+  - **One-Class SVM and Isolation Forest**: These methods treat fraudulent transactions as outliers or anomalies. Instead of classifying all data, these models try to identify data points that deviate from the norm (fraud). They are particularly useful in fraud detection when there is a significant imbalance, as they do not require balancing the classes in the dataset.
+
 
 | Method                   | Description                                         | Pros                         | Cons                                     |
 |--------------------------|-----------------------------------------------------|------------------------------|------------------------------------------|
