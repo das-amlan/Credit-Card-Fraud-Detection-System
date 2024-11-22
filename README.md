@@ -8,12 +8,21 @@ This repository contains the implementation of a Credit Card Fraud Detection Sys
 - Explored anomaly detection methods: One-Class SVM and Isolation Forest.
 - Evaluated model performance using metrics like precision, recall, F1-score, and ROC-AUC.
 
+## Summary
+
+| Method                   | Description                                         | Pros                         | Cons                                     |
+|--------------------------|-----------------------------------------------------|------------------------------|------------------------------------------|
+| **In-Algorithm Techniques** | Adjusts the model itself using class weights.      | Simple to implement.         | May not work well on extreme imbalance.  |
+| **Under-Sampling**       | Reduces the majority class to balance data.         | Works well for large datasets.| Risk of losing important information.   |
+| **Anomaly Detection**    | Treats fraud as an anomaly (unsupervised).          | No need for balancing.        | Assumes fraud is rare and distinct.     |
+
+
 ## Dataset
 The dataset used is the [Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud). It contains anonymized credit card transactions with features scaled to preserve confidentiality.
 
 ## Installation
 1. Clone the repository:
-   git clone https://github.com/yourusername/credit-card-fraud-detection.git
+   git clone https://github.com/das-amlan/credit-card-fraud-detection.git
 
 2. Navigate to the project directory:
     `cd credit-card-fraud-detection`
