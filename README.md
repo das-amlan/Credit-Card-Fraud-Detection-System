@@ -1,4 +1,4 @@
-# Credit-Card-Fraud-Detection-Using-ML-and-Different-Imbalance-Handling-Approaches
+# Credit Card Fraud Detection Using ML and Different Class Imbalance Handling Approaches
 
 A machine learning-based system for detecting fraudulent credit card transactions, leveraging advanced techniques like SMOTE, under-sampling, and anomaly detection models. Built with Random Forest, XGBoost, and SVM for robust performance on imbalanced datasets.
 
