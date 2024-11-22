@@ -46,9 +46,6 @@ The dataset used is the [Credit Card Fraud Detection Dataset](https://www.kaggle
 - Optimize hyperparameters using grid search or Bayesian optimization.
 - Deploy the model as an API for real-time fraud detection.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
 ## Acknowledgments
 - [Kaggle Credit Card Fraud Detection Dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 - [Imbalanced-learn Library](https://imbalanced-learn.org/stable/)
